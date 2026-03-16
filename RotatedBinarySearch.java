@@ -67,7 +67,7 @@ public class RotatedBinarySearch {
                 e = e-1;
             }
             // Left side is sorted, so pivot should be in right 
-            else if (arr[s] > arr[m] || (arr[s] == arr[m] && arr[m] > arr[e])) {
+            else if (arr[s] < arr[m] || (arr[s] == arr[m] && arr[m] > arr[e])) {
                 s = m + 1;
             } else {
                 e = m - 1;
